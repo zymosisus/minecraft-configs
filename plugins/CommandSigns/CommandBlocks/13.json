@@ -1,0 +1,19 @@
+{
+  "id": 13,
+  "name": "rubikExit2",
+  "world": "6c15041c-e09b-4877-9a8c-69a6f98404e6",
+  "x": -730,
+  "y": 22,
+  "z": -743,
+  "commands": [
+    "/ma leave"
+  ],
+  "needed_permissions": [],
+  "temporary_permissions": [],
+  "price": 0.0,
+  "time_before_execution": 0,
+  "move_cancel_timer": false,
+  "move_reset_timer": false,
+  "global_time_between_usages": 0,
+  "player_time_between_usages": 0
+}

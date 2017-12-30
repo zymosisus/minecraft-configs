@@ -1,0 +1,18 @@
+{
+  "id": 7,
+  "world": "51bfb94c-1b8e-4cb6-80e1-4e8afd1c7e8a",
+  "x": 1477,
+  "y": 17,
+  "z": -630,
+  "commands": [
+    "/ma leave"
+  ],
+  "needed_permissions": [],
+  "temporary_permissions": [],
+  "price": 0.0,
+  "time_before_execution": 0,
+  "move_cancel_timer": false,
+  "move_reset_timer": false,
+  "global_time_between_usages": 0,
+  "player_time_between_usages": 0
+}

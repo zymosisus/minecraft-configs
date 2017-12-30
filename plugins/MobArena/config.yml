@@ -1,0 +1,366 @@
+# MobArena v0.98.1 - Config-file
+# Read the Wiki for details on how to set up this file: http://goo.gl/F5TTc
+# Note: You -must- use spaces instead of tabs!
+global-settings:
+  enabled: true
+  allowed-commands: /list, /pl
+  update-notification: true
+  prefix: '&a[MobArena] '
+classes:
+  Knight:
+    items: diamond_sword, potion:8197:3
+    armor: 306,307,308,309
+  Tank:
+    items: iron_sword, potion:8229:2
+    armor: 310,311,312,313
+  Archer:
+    items: wood_sword, bow, arrow:256, potion:8197:3, bone
+    armor: 298,299,300,301
+  Chemist:
+    items: stone_sword, potion:16428:30, potion:16388:8, potion:16389:20, potion:8197:3,
+      potion:8226:1
+    armor: 314,315,316,317
+  Oddjob:
+    items: stone_sword, flint_and_steel, netherrack:2, tnt:4, potion:8197:3
+    armor: 298,299,300,301
+arenas:
+  default:
+    settings:
+      prefix: ''
+      world: world
+      enabled: true
+      protect: true
+      entry-fee: ''
+      default-class: ''
+      clear-wave-before-next: false
+      clear-boss-before-next: false
+      clear-wave-before-boss: false
+      soft-restore: false
+      soft-restore-drops: false
+      require-empty-inv-join: false
+      require-empty-inv-spec: false
+      hellhounds: false
+      pvp-enabled: false
+      monster-infight: false
+      allow-teleporting: false
+      spectate-on-death: true
+      auto-respawn: true
+      share-items-in-arena: true
+      min-players: 0
+      max-players: 0
+      max-join-distance: 0
+      first-wave-delay: 5
+      wave-interval: 15
+      final-wave: 0
+      monster-limit: 100
+      monster-exp: false
+      keep-exp: true
+      food-regen: false
+      lock-food-level: true
+      player-time-in-arena: world
+      auto-ignite-tnt: false
+      auto-start-timer: 0
+      start-delay-timer: 0
+      auto-ready: false
+      use-class-chests: false
+      display-waves-as-level: false
+      display-timer-as-level: false
+      use-scoreboards: true
+      isolated-chat: false
+      global-join-announce: false
+      global-end-announce: false
+      show-death-messages: true
+    waves:
+      recurrent:
+        def1:
+          type: default
+          priority: 1
+          frequency: 1
+          monsters:
+            zombies: 10
+            skeletons: 10
+            spiders: 10
+            creepers: 10
+            wolves: 10
+        spec1:
+          type: special
+          priority: 2
+          frequency: 4
+          monsters:
+            powered-creepers: 10
+            zombie-pigmen: 10
+            angry-wolves: 10
+            blazes: 10
+      single:
+        swarm1:
+          type: swarm
+          wave: 6
+          monster: slime
+          amount: low
+        boss1:
+          type: boss
+          wave: 10
+          monster: cave_spider
+          health: high
+          abilities: arrows, root-target, throw-nearby
+    rewards:
+      waves:
+        every:
+          '3': feather, bone, stick
+          '5': dirt:4, gravel:4, stone:4
+          '10': iron_ingot:10, gold_ingot:8
+        after:
+          '7': minecart, storage_minecart, powered_minecart
+          '13': iron_sword, iron_pickaxe, iron_spade
+          '16': diamond_sword
+    coords:
+      spawnpoints: {}
+      containers: {}
+    class-limits:
+      Oddjob: -1
+      Knight: -1
+      Archer: -1
+      My Items: -1
+      Tank: -1
+      Chemist: -1
+  waffleHouse:
+    settings:
+      prefix: ''
+      world: arenaWorld
+      enabled: true
+      protect: true
+      entry-fee: ''
+      default-class: ''
+      clear-wave-before-next: false
+      clear-boss-before-next: false
+      clear-wave-before-boss: false
+      soft-restore: false
+      soft-restore-drops: false
+      require-empty-inv-join: false
+      require-empty-inv-spec: false
+      hellhounds: false
+      pvp-enabled: false
+      monster-infight: false
+      allow-teleporting: false
+      spectate-on-death: true
+      auto-respawn: true
+      share-items-in-arena: true
+      min-players: 0
+      max-players: 0
+      max-join-distance: 0
+      first-wave-delay: 5
+      wave-interval: 15
+      final-wave: 0
+      monster-limit: 100
+      monster-exp: false
+      keep-exp: true
+      food-regen: false
+      lock-food-level: true
+      player-time-in-arena: world
+      auto-ignite-tnt: false
+      auto-start-timer: 0
+      start-delay-timer: 0
+      auto-ready: false
+      use-class-chests: false
+      display-waves-as-level: false
+      display-timer-as-level: false
+      use-scoreboards: true
+      isolated-chat: false
+      global-join-announce: false
+      global-end-announce: false
+      show-death-messages: true
+    waves:
+      recurrent:
+        def1:
+          type: default
+          priority: 1
+          frequency: 1
+          monsters:
+            zombies: 10
+            skeletons: 10
+            spiders: 10
+            creepers: 10
+            wolves: 10
+        spec1:
+          type: special
+          priority: 2
+          frequency: 4
+          monsters:
+            powered-creepers: 10
+            zombie-pigmen: 10
+            angry-wolves: 10
+            blazes: 10
+      single:
+        swarm1:
+          type: swarm
+          wave: 6
+          monster: slime
+          amount: low
+        boss1:
+          type: boss
+          wave: 10
+          monster: cave_spider
+          health: high
+          abilities: arrows, root-target, throw-nearby
+    rewards:
+      waves:
+        every:
+          '3': feather, bone, stick
+          '5': dirt:4, gravel:4, stone:4
+          '10': iron_ingot:10, gold_ingot:8
+        after:
+          '7': minecart, storage_minecart, powered_minecart
+          '13': iron_sword, iron_pickaxe, iron_spade
+          '16': diamond_sword
+    coords:
+      spawnpoints:
+        -771,5,-784: -770.5,5,-783.5,0.0,0.0,arenaWorld
+        -751,5,-764: -750.5,5,-763.5,0.0,0.0,arenaWorld
+        -771,5,-744: -770.5,5,-743.5,0.0,0.0,arenaWorld
+        -791,5,-764: -790.5,5,-763.5,0.0,0.0,arenaWorld
+      containers:
+        -786,4,-749: -786,4,-749,0.0,0.0,arenaWorld
+        -755,6,-749: -755,6,-749,0.0,0.0,arenaWorld
+        -755,4,-780: -755,4,-780,0.0,0.0,arenaWorld
+        -791,11,-776: -791,11,-776,0.0,0.0,arenaWorld
+        -768,13,-769: -768,13,-769,0.0,0.0,arenaWorld
+        -766,13,-767: -766,13,-767,0.0,0.0,arenaWorld
+        -776,13,-761: -776,13,-761,0.0,0.0,arenaWorld
+        -774,13,-759: -774,13,-759,0.0,0.0,arenaWorld
+        -776,7,-761: -776,7,-761,0.0,0.0,arenaWorld
+        -778,7,-771: -778,7,-771,0.0,0.0,arenaWorld
+        -764,7,-757: -764,7,-757,0.0,0.0,arenaWorld
+      lobby: -767.5,8,-763.5,82.35,0.0,arenaWorld
+      l1: -775,7,-768,0.0,0.0,arenaWorld
+      l2: -767,12,-759,0.0,0.0,arenaWorld
+      p1: -802,3,-795,0.0,0.0,arenaWorld
+      p2: -740,20,-733,0.0,0.0,arenaWorld
+      arena: -785.5,4,-777.5,306.16,0.0,arenaWorld
+      spectator: -769.5,16,-767.5,264.16,0.0,arenaWorld
+      exit: 71.5,70,222.5,-266.7,0.0,world
+    class-limits:
+      Oddjob: -1
+      Knight: -1
+      Archer: -1
+      My Items: -1
+      Tank: -1
+      Chemist: -1
+  rubik:
+    settings:
+      prefix: ''
+      world: arenaWorld
+      enabled: true
+      protect: true
+      entry-fee: ''
+      default-class: ''
+      clear-wave-before-next: false
+      clear-boss-before-next: false
+      clear-wave-before-boss: false
+      soft-restore: false
+      soft-restore-drops: false
+      require-empty-inv-join: false
+      require-empty-inv-spec: false
+      hellhounds: false
+      pvp-enabled: false
+      monster-infight: false
+      allow-teleporting: false
+      spectate-on-death: true
+      auto-respawn: true
+      share-items-in-arena: true
+      min-players: 0
+      max-players: 0
+      max-join-distance: 0
+      first-wave-delay: 5
+      wave-interval: 15
+      final-wave: 0
+      monster-limit: 100
+      monster-exp: false
+      keep-exp: true
+      food-regen: false
+      lock-food-level: true
+      player-time-in-arena: world
+      auto-ignite-tnt: false
+      auto-start-timer: 0
+      start-delay-timer: 0
+      auto-ready: false
+      use-class-chests: false
+      display-waves-as-level: false
+      display-timer-as-level: false
+      use-scoreboards: true
+      isolated-chat: false
+      global-join-announce: false
+      global-end-announce: false
+      show-death-messages: true
+    waves:
+      recurrent:
+        def1:
+          type: default
+          priority: 1
+          frequency: 1
+          monsters:
+            zombies: 10
+            skeletons: 10
+            spiders: 10
+            creepers: 10
+            wolves: 10
+        spec1:
+          type: special
+          priority: 2
+          frequency: 4
+          monsters:
+            powered-creepers: 10
+            zombie-pigmen: 10
+            angry-wolves: 10
+            blazes: 10
+      single:
+        swarm1:
+          type: swarm
+          wave: 6
+          monster: slime
+          amount: low
+        boss1:
+          type: boss
+          wave: 10
+          monster: cave_spider
+          health: high
+          abilities: arrows, root-target, throw-nearby
+    rewards:
+      waves:
+        every:
+          '3': feather, bone, stick
+          '5': dirt:4, gravel:4, stone:4
+          '10': iron_ingot:10, gold_ingot:8
+        after:
+          '7': minecart, storage_minecart, powered_minecart
+          '13': iron_sword, iron_pickaxe, iron_spade
+          '16': diamond_sword
+    coords:
+      spawnpoints:
+        -727,9,-739: -726.5,9,-738.5,0.0,0.0,arenaWorld
+        -733,13,-736: -732.5,13,-735.5,0.0,0.0,arenaWorld
+        -727,17,-737: -726.5,17,-736.5,0.0,0.0,arenaWorld
+      containers:
+        -736,17,-734: -736,17,-734,0.0,0.0,arenaWorld
+        -733,9,-739: -733,9,-739,0.0,0.0,arenaWorld
+        -737,9,-747: -737,9,-747,0.0,0.0,arenaWorld
+        -727,9,-734: -727,9,-734,0.0,0.0,arenaWorld
+        -731,13,-740: -731,13,-740,0.0,0.0,arenaWorld
+        -731,13,-738: -731,13,-738,0.0,0.0,arenaWorld
+        -737,13,-736: -737,13,-736,0.0,0.0,arenaWorld
+        -733,17,-745: -733,17,-745,0.0,0.0,arenaWorld
+        -724,17,-734: -724,17,-734,0.0,0.0,arenaWorld
+      lobby: -730.5,4,-741.5,178.5,0.0,arenaWorld
+      l1: -738,4,-748,0.0,0.0,arenaWorld
+      l2: -723,7,-733,0.0,0.0,arenaWorld
+      p1: -738,8,-748,0.0,0.0,arenaWorld
+      p2: -723,20,-733,0.0,0.0,arenaWorld
+      arena: -729.5,9,-740.5,-97.5,0.0,arenaWorld
+      exit: 71.5,70,222.5,166.65,0.0,world
+      spectator: -730.5,21,-740.5,181.2,0.0,arenaWorld
+    class-limits:
+      Oddjob: -1
+      Knight: -1
+      Archer: -1
+      My Items: -1
+      Tank: -1
+      Chemist: -1
