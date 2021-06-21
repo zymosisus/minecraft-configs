@@ -18,7 +18,6 @@ groups:
       prefix: '&0(&4Admin&0)&7 '
   Family:
     permissions:
-    - HatlessVenus
     - multiverse.portal.access.*
     - multiverse.teleport.self.*
     - multiverse.access.*
@@ -51,3 +50,8 @@ users:
     permissions: []
     group:
     - Family
+  0cd7165f-7cc7-432e-b2a7-80cc864eea68:
+    group:
+    - Family
+    options:
+      name: Zymosisus2

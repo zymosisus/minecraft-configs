@@ -23,4 +23,5 @@ groups:
     - world_nether
     - world_the_end
     - arenaWorld
+    - aquaticWorld
     default-gamemode: SURVIVAL

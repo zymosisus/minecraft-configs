@@ -1,7 +1,6 @@
 portals:
   world-TestWorldPortal:
     entryfee:
-      currency: -1
       amount: 0.0
     safeteleport: true
     teleportnonplayers: false
@@ -12,7 +11,6 @@ portals:
     destination: testWorld
   testWorld-gazeboPortal:
     entryfee:
-      currency: -1
       amount: 0.0
     safeteleport: true
     teleportnonplayers: false
@@ -20,10 +18,9 @@ portals:
     owner: Zymosisus
     location: 1579.0,6.0,-582.0:1582.0,9.0,-582.0
     world: testWorld
-    destination: a:gazebo
+    destination: a:townCenter
   hPortal2:
     entryfee:
-      currency: -1
       amount: 0.0
     safeteleport: true
     teleportnonplayers: false
@@ -31,10 +28,9 @@ portals:
     owner: Zymosisus
     location: 99.0,66.0,425.0:102.0,67.0,428.0
     world: world
-    destination: a:dsHome
+    destination: aquaticWorld
   villagePortal-testWorldPortal:
     entryfee:
-      currency: -1
       amount: 0.0
     safeteleport: true
     teleportnonplayers: false
@@ -43,3 +39,33 @@ portals:
     location: 105.0,69.0,455.0:110.0,73.0,455.0
     world: world
     destination: a:testWorldPortal
+  world-aquaticWorld:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Zymosisus
+    location: 119.0,69.0,455.0:124.0,74.0,455.0
+    world: world
+    destination: aquaticWorld
+  auqaticWorld-townCenter:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Zymosisus
+    location: -154.0,81.0,25.0:-149.0,86.0,25.0
+    world: aquaticWorld
+    destination: a:townCenter
+  world-cliffsclaves:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Zymosisus
+    location: 133.0,69.0,455.0:138.0,74.0,455.0
+    world: world
+    destination: cliffsclaves

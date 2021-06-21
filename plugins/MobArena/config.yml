@@ -6,6 +6,9 @@ global-settings:
   allowed-commands: /list, /pl
   update-notification: true
   prefix: '&a[MobArena] '
+  pet-items:
+    wolf: bone
+    ocelot: salmon
 classes:
   Knight:
     items: diamond_sword, potion:8197:3
