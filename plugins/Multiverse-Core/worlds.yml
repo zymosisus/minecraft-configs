@@ -237,7 +237,7 @@ worlds:
   cliffsclaves:
     ==: MVWorld
     hidden: 'false'
-    alias: ''
+    alias: cliffsclaves
     color: WHITE
     style: NORMAL
     pvp: 'false'

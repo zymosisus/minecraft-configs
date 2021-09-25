@@ -1,0 +1,10 @@
+# Ignore All
+/*
+
+# Add YAML
+!.gitignore
+!*.yml
+!*.properties
+!*.json
+/plugins/Essentials/userdata
+usercache.json

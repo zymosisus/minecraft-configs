@@ -69,3 +69,13 @@ portals:
     location: 133.0,69.0,455.0:138.0,74.0,455.0
     world: world
     destination: cliffsclaves
+  cliffsclaves-to-towncenter:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Zymosisus
+    location: -103.0,67.0,-84.0:-103.0,72.0,-79.0
+    world: cliffsclaves
+    destination: a:townCenter
